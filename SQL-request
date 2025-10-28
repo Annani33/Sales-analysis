@@ -1,0 +1,31 @@
+SELECT
+    s.date AS order_date,
+    o.ga_session_id,
+    sp.continent,
+    sp.country,
+    sp.device,
+    sp.browser,
+    sp.mobile_model_name,
+    sp.operating_system,
+    sp.language,
+    sp.medium AS traffic_source,
+    sp.channel AS traffic_channel,
+    ac.id AS registered_user_id,
+    CASE WHEN ac.is_verified = 1 THEN 'Yes' ELSE 'No' END AS is_email_verified,
+    CASE WHEN ac.is_unsubscribed = 1 THEN 'No' ELSE 'Yes' END AS is_subscribed,
+    p.category AS product_category,
+    p.name AS product_name,
+    p.price AS product_price,
+    p.short_description AS product_description
+FROM
+    `DA.order` o
+LEFT JOIN
+    `DA.session` s ON o.ga_session_id = s.ga_session_id
+LEFT JOIN
+    `DA.session_params` sp ON o.ga_session_id = sp.ga_session_id
+LEFT JOIN
+    `DA.account_session` acs ON o.ga_session_id = acs.ga_session_id
+LEFT JOIN
+    `DA.account` ac ON acs.account_id = ac.id
+LEFT JOIN
+    `DA.product` p ON o.item_id = p.item_id
