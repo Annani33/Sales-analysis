@@ -1,4 +1,3 @@
-# Sales-analysis
 # E-Commerce Sales Analysis: SQL, Python & Tableau
 
 ## 📖 Project Overview
