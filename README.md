@@ -73,4 +73,4 @@ An **interactive Tableau dashboard** was developed to visualize key metrics and 
 
 > **Author:** [Hanna Nikitenko]  
 > **Notebook:** [View in Google Colab](https://colab.research.google.com/drive/1En_wJ_3ugrwi3BaYc3Q7Q2vSSZqZtrOV?usp=sharing)
-> **Dashboard:** *((https://public.tableau.com/views/Salesanalysis_17619092625440/Sales?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))*
+> **Dashboard:** *(https://public.tableau.com/views/Salesanalysis_17619092625440/Sales?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)*
