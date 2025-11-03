@@ -23,7 +23,7 @@ The goal was to demonstrate **end-to-end data analysis skills (ETL, EDA, Statist
 |-----------------|-----------------------------------|----------|
 | **Database**    | Google BigQuery                   | SQL-based data extraction from the raw dataset |
 | **Data Analysis** | Python (Pandas, NumPy)           | Data cleaning, processing, and aggregation |
-| **Statistics**  | Python (Scipy.stats)              | Correlation tests, normality checks, and group comparison |
+| **Statistics**  | Python (Scipy.stats, Statsmodels.stats.proportion)              | Correlation tests, normality checks, and group comparison |
 | **Visualization (EDA)** | Python (Matplotlib, Seaborn) | Graphs and visual exploration |
 | **BI Reporting** | Tableau Public                   | Interactive dashboard creation |
 
